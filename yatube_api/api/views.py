@@ -1,9 +1,6 @@
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets
 from django.shortcuts import get_object_or_404
-from django.core.exceptions import PermissionDenied 
+from django.core.exceptions import PermissionDenied
 from posts.models import Post, Group, Comment
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer
 
